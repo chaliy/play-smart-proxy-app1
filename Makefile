@@ -8,6 +8,9 @@ start:
 dev:
 	npm run dev
 
+build:
+	npm run build
+
 deploy-init:
 	git remote add azure https://chaliy@$(SERVICE_NAME).scm.azurewebsites.net:443/$(SERVICE_NAME).git
 

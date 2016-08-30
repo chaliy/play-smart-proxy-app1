@@ -20,7 +20,7 @@ let config = Object.assign({}, baseConfig, {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
-      'API_URI': 'http://localhost:10020'
+      'API_URI': '"http://localhost:10020"'
     }),
     new BowerWebpackPlugin({
       searchResolveModulesDirectories: false

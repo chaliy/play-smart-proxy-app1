@@ -55,7 +55,7 @@ module.exports = {
       searchResolveModulesDirectories: false
     }),
     new webpack.DefinePlugin({
-      'API_URI': 'http://localhost:10020'
+      'API_URI': '"http://localhost:10020"'
     })
   ]
 };
