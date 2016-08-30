@@ -11,7 +11,8 @@
     "lint": "eslint ./src",
     "posttest": "npm run lint",
     "dev": "node dev.js --env=dev",
-    "start": "npm run dist & node index.js",
+    "prestart": "npm run dist",
+    "start": "node index.js",
     "test": "karma start",
     "test:watch": "karma start --autoWatch=true --singleRun=false"
   },
