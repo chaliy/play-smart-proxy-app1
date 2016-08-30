@@ -1,0 +1,3 @@
+[submodule "server"]
+	path = server
+	url = https://chaliy@play-smart-proxy-app1.scm.azurewebsites.net:443/play-smart-proxy-app1.git

@@ -6,12 +6,11 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist/*",
-    "copy": "copyfiles -f ./src/index.html ./src/favicon.ico ./public",
+    "copy": "copyfiles -f ./src/index.html ./src/favicon.ico ./server/public",
     "build": "npm run copy & webpack --env=dist",
     "lint": "eslint ./src",
     "posttest": "npm run lint",
     "dev": "node dev.js --env=dev",
-    "start": "node index.js",
     "test": "karma start",
     "test:watch": "karma start --autoWatch=true --singleRun=false"
   },
@@ -61,12 +60,5 @@
     "react-bootstrap": "^0.30.3",
     "react-dom": "^15.0.0",
     "react-redux": "^4.4.5"
-  },
-  "engines": {
-    "node": "6.3.0"
-  },
-  "dependencies": {
-    "connect": "^3.4.1",
-    "serve-static": "^1.11.1"
   }
 }
