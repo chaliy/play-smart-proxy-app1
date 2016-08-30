@@ -3,17 +3,11 @@
 SERVICE_NAME=play-smart-proxy-app1
 SERVICE_GIT=https://chaliy@$(SERVICE_NAME).scm.azurewebsites.net:443/$(SERVICE_NAME).git
 
-start:
-	npm start
-
 dev:
 	npm run dev
 
 build:
 	npm run build
-
-deploy-init:
-	git submodule add $(SERVICE_GIT) server
 
 deploy: build
 	cd server && git commit -am "New deployment"
