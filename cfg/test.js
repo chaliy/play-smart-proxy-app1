@@ -53,6 +53,9 @@ module.exports = {
   plugins: [
     new BowerWebpackPlugin({
       searchResolveModulesDirectories: false
+    }),
+    new webpack.DefinePlugin({
+      'API_URI': 'http://localhost:10020'
     })
   ]
 };

@@ -19,6 +19,9 @@ let config = Object.assign({}, baseConfig, {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
+    new webpack.DefinePlugin({
+      'API_URI': 'http://localhost:10020'
+    }),
     new BowerWebpackPlugin({
       searchResolveModulesDirectories: false
     })
