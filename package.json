@@ -6,12 +6,11 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist/*",
-    "copy": "copyfiles -f ./src/index.html ./src/favicon.ico ./dist",
-    "dist": "npm run copy & webpack --env=dist",
+    "copy": "copyfiles -f ./src/index.html ./src/favicon.ico ./public",
+    "build": "npm run copy & webpack --env=dist",
     "lint": "eslint ./src",
     "posttest": "npm run lint",
     "dev": "node dev.js --env=dev",
-    "prestart": "npm run dist",
     "start": "node index.js",
     "test": "karma start",
     "test:watch": "karma start --autoWatch=true --singleRun=false"
