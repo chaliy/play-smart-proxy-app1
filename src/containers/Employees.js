@@ -13,7 +13,8 @@ class Employees extends Component {
 
   componentWillMount() {
     let self = this;
-    fetch('API_URI/employee')
+    console.log(`${API_URI}/employee`);
+    fetch(`${API_URI}/employee`)
       .then(r => r.json())
       .then(payload => {
         self.setState({
